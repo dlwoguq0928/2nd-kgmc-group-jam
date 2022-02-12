@@ -26,3 +26,20 @@ y += vy;
 
 //prevent going outside
 PreventOutside()
+
+//surface process
+
+surface_set_target(global.SURF.outlineSurf.surf);
+
+	draw_sprite_ext(sprite_index, 0, 
+		x+imgStruct.img_xps-global.CAMERA.view_x, y+imgStruct.img_yps-global.CAMERA.view_y, 
+		image_xscale*imgStruct.img_xsc, 
+		image_yscale*imgStruct.img_ysc, 
+		image_angle+imgStruct.img_rot, 
+		image_blend,imgStruct.img_opa
+	);
+	
+surface_reset_target();
+
+
+
