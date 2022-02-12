@@ -22,3 +22,7 @@ if ( abs(horizontal)+abs(vertical) > 0 ){
 
 x += vx;
 y += vy;
+
+
+//prevent going outside
+PreventOutside()
