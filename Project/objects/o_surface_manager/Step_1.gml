@@ -6,3 +6,5 @@ outlineSurf.reset(c_white,0);
 entitySurf.keep();
 entitySurf.reset(c_white,0);
 
+shadowSurf.keep();
+shadowSurf.reset(c_white,0);

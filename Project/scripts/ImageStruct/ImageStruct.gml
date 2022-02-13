@@ -7,4 +7,5 @@ function ImageStruct() constructor{
 	img_ysc = 1;
 	img_rot = 0;
 	img_opa = 1;
+	face = 1;
 }

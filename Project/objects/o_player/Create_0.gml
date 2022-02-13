@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 event_inherited(); //o_Entity 
+
 //movement
 vx = 0;
 vy = 0;

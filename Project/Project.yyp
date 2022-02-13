@@ -1,7 +1,6 @@
 {
   "resources": [
     {"id":{"name":"s_player","path":"sprites/s_player/s_player.yy",},"order":0,},
-    {"id":{"name":"o_tools","path":"objects/o_tools/o_tools.yy",},"order":2,},
     {"id":{"name":"o_game_manager","path":"objects/o_game_manager/o_game_manager.yy",},"order":0,},
     {"id":{"name":"s_background","path":"sprites/s_background/s_background.yy",},"order":1,},
     {"id":{"name":"Camera","path":"scripts/Camera/Camera.yy",},"order":3,},
@@ -9,9 +8,12 @@
     {"id":{"name":"SurfaceStruct","path":"scripts/SurfaceStruct/SurfaceStruct.yy",},"order":2,},
     {"id":{"name":"s_tools","path":"sprites/s_tools/s_tools.yy",},"order":2,},
     {"id":{"name":"PreventOutside","path":"scripts/PreventOutside/PreventOutside.yy",},"order":1,},
+    {"id":{"name":"s_player_1","path":"sprites/s_player_1/s_player_1.yy",},"order":5,},
     {"id":{"name":"o_Entity","path":"objects/o_Entity/o_Entity.yy",},"order":1,},
     {"id":{"name":"shd_outline","path":"shaders/shd_outline/shd_outline.yy",},"order":0,},
     {"id":{"name":"ImageStruct","path":"scripts/ImageStruct/ImageStruct.yy",},"order":0,},
+    {"id":{"name":"o_tools","path":"objects/o_tools/o_tools.yy",},"order":3,},
+    {"id":{"name":"s_tools_1","path":"sprites/s_tools_1/s_tools_1.yy",},"order":4,},
     {"id":{"name":"o_player","path":"objects/o_player/o_player.yy",},"order":0,},
     {"id":{"name":"o_surface_manager","path":"objects/o_surface_manager/o_surface_manager.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
