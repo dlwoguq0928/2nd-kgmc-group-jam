@@ -9,3 +9,10 @@ gv = {
 	time_max: 86400*7,  //제한 시간 (86400 x 일)
 }
 
+
+//initialize the variable : tool
+enum tool {
+	kettle,  //물뿌리개
+	hoe, //괭이
+	basket,  //바구니
+}

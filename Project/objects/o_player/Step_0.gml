@@ -12,6 +12,8 @@ if ( abs(horizontal)+abs(vertical) > 0 ){
 	imgStruct.img_rot = sin(current_time/50)*20;
 	imgStruct.img_yps = -abs(sin(current_time/50)*16);
 	
+	image_xscale = (vx == 0) ? image_xscale : sign(vx);  //이미지 좌우방향
+	
 }else{	
 	vx -= fric*sign(vx);
 	vy -= fric*sign(vy);
@@ -42,4 +44,24 @@ surface_set_target(global.SURF.outlineSurf.surf);
 surface_reset_target();
 
 
+//pick up a tool
+if keyboard_check_pressed(vk_space) {
+	var inst = instance_nearest(x,y,o_tools);
+	var dist = point_distance(x,y,inst.x,inst.y);
+	if (dist <= 64) 
+	and (inst != my_tool) {
+		my_tool = inst;
+	} 
+	else if (my_tool != noone)
+	{
+		my_tool = noone;
+	}
+}
 
+//carrying a tool
+if (my_tool != noone)
+{
+	my_tool.y = y;
+	my_tool.x = x + image_xscale*32;
+	my_tool.image_xscale = image_xscale;
+}

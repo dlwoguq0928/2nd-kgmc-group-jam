@@ -10,3 +10,5 @@ max_velocity = 3;
 fric = 0.1;
 spd_threshold = 0.1;
 
+//tool
+my_tool = noone;  //noone
