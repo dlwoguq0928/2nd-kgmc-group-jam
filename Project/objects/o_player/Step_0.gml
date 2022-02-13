@@ -30,7 +30,6 @@ y += vy;
 PreventOutside()
 
 //surface process
-
 surface_set_target(global.SURF.outlineSurf.surf);
 
 	draw_sprite_ext(sprite_index, 0, 
