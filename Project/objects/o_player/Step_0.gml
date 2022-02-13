@@ -60,7 +60,7 @@ if keyboard_check_pressed(vk_space) {
 //carrying a tool
 if (my_tool != noone)
 {
-	my_tool.y = y;
-	my_tool.x = x + image_xscale*32;
+	my_tool.y = y - 2;
+	my_tool.x = x + image_xscale*28;
 	my_tool.image_xscale = image_xscale;
 }
