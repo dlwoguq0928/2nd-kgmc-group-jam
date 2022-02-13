@@ -3,4 +3,6 @@
 outlineSurf.keep();
 outlineSurf.reset(c_white,0);
 
+entitySurf.keep();
+entitySurf.reset(c_white,0);
 

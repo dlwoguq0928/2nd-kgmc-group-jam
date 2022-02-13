@@ -12,8 +12,6 @@ if ( abs(horizontal)+abs(vertical) > 0 ){
 	imgStruct.img_rot = sin(current_time/50)*20;
 	imgStruct.img_yps = -abs(sin(current_time/50)*16);
 	
-	image_xscale = (vx == 0) ? image_xscale : sign(vx);  //이미지 좌우방향
-	
 }else{	
 	vx -= fric*sign(vx);
 	vy -= fric*sign(vy);
@@ -30,37 +28,15 @@ y += vy;
 PreventOutside()
 
 //surface process
-surface_set_target(global.SURF.outlineSurf.surf);
-
+/*
+global.outlineSurf.draw_on( function(){
 	draw_sprite_ext(sprite_index, 0, 
 		x+imgStruct.img_xps-global.CAMERA.view_x, y+imgStruct.img_yps-global.CAMERA.view_y, 
 		image_xscale*imgStruct.img_xsc, 
 		image_yscale*imgStruct.img_ysc, 
 		image_angle+imgStruct.img_rot, 
-		image_blend,imgStruct.img_opa
-	);
-	
-surface_reset_target();
+		image_blend,imgStruct.img_opa);
+});
+*/
 
 
-//pick up a tool
-if keyboard_check_pressed(vk_space) {
-	var inst = instance_nearest(x,y,o_tools);
-	var dist = point_distance(x,y,inst.x,inst.y);
-	if (dist <= 64) 
-	and (inst != my_tool) {
-		my_tool = inst;
-	} 
-	else if (my_tool != noone)
-	{
-		my_tool = noone;
-	}
-}
-
-//carrying a tool
-if (my_tool != noone)
-{
-	my_tool.y = y - 2;
-	my_tool.x = x + image_xscale*28;
-	my_tool.image_xscale = image_xscale;
-}
